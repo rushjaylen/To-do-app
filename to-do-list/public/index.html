@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.mjs" defer></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Login View -->
+        <div id="login-view" class="login-view">
+            <h1 class="page-heading">Welcome to To-Do-It!</h1>
+            <h1 class="content-heading">Login</h1>
+            <label for="username" class="field-label">Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <button id="login-btn">Login</button>
+        </div>
+
+        <!-- To-Do View -->
+        <div id="todo-view" class="todo-view" style="display: none;">
+            <h1 class="content-heading">To-Do List</h1>
+            <button id="logout-btn" class="logout-btn">Logout</button>
+            <div id="todos-container">
+                <ul id="todo-list" class="todo"></ul>
+            </div>
+            <div>
+                <input type="text" id="new-todo" placeholder="Enter new task">
+                <button id="add-todo-btn">Add</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
